@@ -1,12 +1,46 @@
-# React + Vite
+# 👥 React Kullanıcı Kartları Uygulaması
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, **React'e yeni başlayanlar için bir component pratiği** amacıyla geliştirilmiştir. Kullanıcı bilgilerini bir component'e props yoluyla aktararak ekranda görüntülemeyi amaçlar.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Proje Özeti
 
-## Expanding the ESLint configuration
+Uygulama basit bir kullanıcı kartı gösterim sistemidir. İki temel bileşenden oluşur:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔹 `App.jsx`
+
+- Ana component.
+- Kullanıcı bilgilerini içerir ve her biri için `<UserCard />` bileşenini çağırır.
+- Props aracılığıyla `name`, `email` ve `age` verilerini aktarır.
+
+### 🔹 `UserCard.jsx`
+
+- Tek bir kullanıcıyı temsil eden bileşendir.
+- Props ile gelen bilgileri görsel olarak render eder.
+
+---
+
+## 🧠 Kullanılan Teknolojiler
+
+- **React** (Vite ile oluşturuldu)
+- JSX
+- Props kullanımı
+- Bileşen yapısı
+
+---
+
+## 🧩 Kullanıcı Arayüzü
+
+```txt
+---------------------
+|  Emre Yılmaz     |
+|  emre@example.com|
+|  Yaş: 25         |
+---------------------
+
+---------------------
+|  Ayşe Demir      |
+|  ayse@example.com|
+|  Yaş: 30         |
+---------------------
