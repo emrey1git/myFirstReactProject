@@ -1,46 +1,39 @@
-# 👥 React Kullanıcı Kartları Uygulaması
+# 🛍️ Ürün Kartları Listesi React Uygulaması
 
-Bu proje, **React'e yeni başlayanlar için bir component pratiği** amacıyla geliştirilmiştir. Kullanıcı bilgilerini bir component'e props yoluyla aktararak ekranda görüntülemeyi amaçlar.
+Bu küçük React alıştırması, **dinamik olarak oluşturulan ürün kartları** (“Product Cards”) bileşenleri ile çalışmanızı sağlar. React’in temel bileşen yapısını, props ile veri aktarımını ve CSS ile düzenlemeyi pekiştirmek için tasarlanmıştır.
 
 ---
 
 ## 🚀 Proje Özeti
 
-Uygulama basit bir kullanıcı kartı gösterim sistemidir. İki temel bileşenden oluşur:
+- **App.jsx**  
+  - Uygulamanın giriş noktasıdır.  
+  - Ürün verilerini bir dizi (`products`) içerisinde tanımlar.  
+  - `.map()` metodu ile her bir ürün nesnesi için `<ProductCard />` bileşeni oluşturur.  
 
-### 🔹 `App.jsx`
+- **ProductCard.jsx**  
+  - Tek bir ürün kartını temsil eden fonksiyonel bileşendir.  
+  - `props` aracılığıyla gelen `productName`, `price` ve `alt` (açıklama) değerlerini alır ve görsel olarak render eder.  
 
-- Ana component.
-- Kullanıcı bilgilerini içerir ve her biri için `<UserCard />` bileşenini çağırır.
-- Props aracılığıyla `name`, `email` ve `age` verilerini aktarır.
-
-### 🔹 `UserCard.jsx`
-
-- Tek bir kullanıcıyı temsil eden bileşendir.
-- Props ile gelen bilgileri görsel olarak render eder.
-
----
-
-## 🧠 Kullanılan Teknolojiler
-
-- **React** (Vite ile oluşturuldu)
-- JSX
-- Props kullanımı
-- Bileşen yapısı
+- **CSS Düzeni**  
+  - `flex` kullanarak kartlar yatayda ve dikeyde hizalanır.  
+  - Kartlar arasında boşluk yaratılır, hover efekti ve hafif “öne gelme” animasyonu uygulanır.  
+  - Başlık ve içerik metinleri, `.card-content` gibi yardımcı sınıflarla ortalanır.
 
 ---
 
-## 🧩 Kullanıcı Arayüzü
+## 📦 Teknolojiler ve Araçlar
 
-```txt
----------------------
-|  Emre Yılmaz     |
-|  emre@example.com|
-|  Yaş: 25         |
----------------------
+- **React** (Fonksiyonel bileşenler & Hooks yok – sadece props)  
+- **Vite** (hızlı geliştirme sunucusu ve paketleme)  
+- **JavaScript (ES6+) & JSX**  
+- **CSS3** (Flexbox, geçiş animasyonları)
 
----------------------
-|  Ayşe Demir      |
-|  ayse@example.com|
-|  Yaş: 30         |
----------------------
+---
+
+## 🔧 Kurulum & Çalıştırma
+
+1. **Repo’yu klonlayın**  
+   ```bash
+   git clone https://github.com/kullanici-adi/urun-kartlari-listesi.git
+   cd urun-kartlari-listesi
